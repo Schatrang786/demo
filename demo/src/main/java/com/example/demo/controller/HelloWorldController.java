@@ -28,6 +28,7 @@ public class HelloWorldController {
 		return sb.toString();
 		
 	}
+	//test
 	@GetMapping("/test")
 	public String message() {
 		return messageString();
