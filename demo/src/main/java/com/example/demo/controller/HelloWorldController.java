@@ -12,7 +12,6 @@ public class HelloWorldController {
 	public List<Integer> hello() {
 		return getNumber();
 	}
-	//das ist ein kommentar
 	private List<Integer> getNumber(){
 		Integer[] week = {1,2343,34,2,44,8,9,0};
 		Arrays.sort(week);
