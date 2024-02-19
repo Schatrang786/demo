@@ -1,7 +1,9 @@
 package com.example.demo.controller;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +21,17 @@ public class HelloWorldController {
 		return Arrays.asList(week);
 	}
 	
+	
+	private Map<String, Integer> getMap(){
+		Map<String, Integer> myMap = new HashMap<String, Integer>();
+		myMap.put("foo", 3);
+		return myMap;
+	}
+	
+	@GetMapping("/map")
+	public Map<String, Integer> myHashMapMethod(){
+		return getMap();
+	}
 	//test von lokal
 	private String messageString() {
 		StringBuilder sb = new StringBuilder();
