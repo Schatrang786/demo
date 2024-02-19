@@ -16,7 +16,7 @@ public class HelloWorldController {
 	private List<Integer> getNumber(){
 		Integer[] week = {1,2343,34,2,44,8,9,0};
 		Arrays.sort(week);
-		System.out.println("das ist auf der System.out.println");
+		System.out.println("Github commit");
 		return Arrays.asList(week);
 	}
 	
